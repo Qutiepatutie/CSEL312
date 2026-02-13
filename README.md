@@ -5,6 +5,7 @@
 ### 1. Create a database named `storefront`
 
 ### 2. Start php then open seeStore.php
+>Make sure files are in htdocs
 
 ### 3. Import queries.sql into MySql
 
