@@ -42,7 +42,7 @@ if (mysqli_num_rows($get_item_res) < 1) {
     $display_block .= <<<END_OF_TEXT
         <p><em>You are viewing:</em><br/>
         <strong><a href="seestore.php?category_id=$category_id">$category_title</a> &gt;$item_title</strong></p>
-        <div style="float: left;"><img src="$item_image" alt="$item_title"/></div>
+        <div style="float: left;"><img src="images/$item_image.jpg" alt="$item_title"/></div>
         <div style="float: left; padding-left: 12px">
         <p><strong>Description:</strong><br/>$item_description</p>
         <p><strong>Price:</strong> \$$item_price</p>
@@ -125,6 +125,12 @@ mysqli_close($mysqli);
 <head>
     <title>My Store</title>
 </head>
+<style>
+    img {
+        width: 250px;
+
+    }
+</style>
 
 <body>
     <?php echo $display_block; ?>
