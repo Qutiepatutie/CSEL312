@@ -44,7 +44,7 @@ if (mysqli_num_rows($get_item_res) < 1) {
         <strong><a href="seestore.php?category_id=$category_id">$category_title</a> &gt;$item_title</strong></p>
         <div style="float: left;"><img src="$item_image" alt="$item_title"/></div>
         <div style="float: left; padding-left: 12px">
-        <p><strong>descriptionription:</strong><br/>$item_description</p>
+        <p><strong>Description:</strong><br/>$item_description</p>
         <p><strong>Price:</strong> \$$item_price</p>
         END_OF_TEXT;
 

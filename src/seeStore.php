@@ -109,7 +109,7 @@
                 $safe_category_id = mysqli_real_escape_string($mysqli,$_GET['category_id']);   
                 //get items
                 $get_items_sql = "SELECT id, item_title, item_price FROM store_items 
-                                  WHERE id = '".$safe_category_id."' ORDER BY item_title";
+                                  WHERE cat_id = '".$safe_category_id."' ORDER BY item_title";
                 
                 $get_items_result = mysqli_query($mysqli, $get_items_sql) 
                                  or die(mysqli_error($mysqli)); 
